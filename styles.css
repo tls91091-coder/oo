@@ -1,0 +1,130 @@
+/* Reset */
+
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Page styling */
+body {
+font-family: Arial, sans-serif;
+background: #0b0f2b;
+color: white;
+line-height: 1.6;
+overflow-x: hidden;
+}
+
+/* Header */
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+background: rgba(0,0,0,0.6);
+}
+
+header h1 {
+font-size: 24px;
+}
+
+/* Navigation */
+nav ul {
+list-style: none;
+display: flex;
+gap: 20px;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+
+nav a {
+color: #ffd84d;
+}
+
+/* Hero section */
+.hero {
+text-align: center;
+padding: 120px 20px;
+}
+
+.hero h2 {
+font-size: 40px;
+margin-bottom: 10px;
+}
+
+/* Content */
+.content {
+max-width: 900px;
+margin: auto;
+padding: 40px;
+text-align: center;
+}
+
+/* Footer */
+footer {
+text-align: center;
+padding: 20px;
+background: rgba(0,0,0,0.6);
+}
+
+/* Stars background */
+body::before {
+content: "";
+position: fixed;
+width: 2px;
+height: 2px;
+background: white;
+box-shadow:
+50px 100px white,
+150px 200px white,
+300px 50px white,
+500px 150px white,
+700px 80px white,
+900px 120px white,
+1100px 60px white,
+1300px 200px white,
+200px 300px white,
+600px 250px white,
+800px 400px white,
+1000px 350px white,
+1200px 420px white,
+1400px 500px white;
+z-index: -1;
+}
+
+/* Moon */
+body::after {
+content: "";
+position: fixed;
+top: 80px;
+right: 120px;
+width: 120px;
+height: 120px;
+background: #ffd84d;
+border-radius: 50%;
+box-shadow: 0 0 40px #ffd84d;
+z-index: -1;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+
+header {
+flex-direction: column;
+gap: 10px;
+}
+
+nav ul {
+flex-direction: column;
+align-items: center;
+}
+
+.hero h2 {
+font-size: 28px;
+}
+
+}
